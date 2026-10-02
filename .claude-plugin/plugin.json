@@ -1,0 +1,6 @@
+{
+  "name": "harness",
+  "description": "Meta harness: creates and manages Rob's Claude Code skills from inside a working session.",
+  "version": "0.1.0",
+  "author": { "name": "Rob Cornish" }
+}
