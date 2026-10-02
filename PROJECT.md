@@ -86,15 +86,11 @@ directly.
 - **One line per change** in that repo's changelog. This file stays one page and
   always describes the current whole.
 
-## Next steps (proposed)
+## Next steps
 
-0. **Create the library and move in what exists**: the TikZiT skill and the
-   working rules now sitting in one project's memory folder. No new behaviour.
-1. **Capture and Calibrate**, tested by producing a tikz-cd style skill.
-2. **Refine and Place**.
-3. **Scout**, on request only.
+1. **Build the meta harness**: the entry point, Capture, Calibrate, the
+   prior-art check and the change report. It wraps Claude Code's built-in
+   skill creator where that already does the job.
+2. **Decide what follows** once it has been used for real.
 
-Candidates for the backlog, not a plan: a diagram edit loop through TikZiT and
-quiver; a project notebook; a review command; a blind cold reader and a writer
-in Rob's voice; verbatim-quote literature checks; scenario-based review for
-autoformalization.
+Candidate skills are listed in the library's `BACKLOG.md`.
