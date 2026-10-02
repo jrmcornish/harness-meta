@@ -1,6 +1,7 @@
 ---
 name: harness
 description: Create, change, list or move Rob's own Claude Code skills from inside a working session. Invoked as /harness, or when Rob asks to turn something he keeps doing into a skill, says a skill got something wrong and should be updated, asks what skills exist or where one lives, or wants to change how the harness itself works. Separately, in any session: when Rob has corrected the same kind of output more than once, you may end a reply with one line starting "Harness suggestion:" that proposes capturing it as a skill, at most once per topic.
+allowed-tools: Read(~/.claude/skills/**) Read(~/code/harness/**) Read(~/.claude/projects/**)
 ---
 
 # Harness
