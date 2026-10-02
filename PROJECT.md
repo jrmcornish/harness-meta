@@ -33,16 +33,21 @@ shared core is that audit loop, not the mathematics.
 ## Architecture
 
 Claude Code is the interface. This repo is a plugin holding only the meta
-layer: the operations that create and manage skills from inside an ordinary
-working session. It contains no skills of its own kind.
+layer: one skill that creates and manages other skills from inside an ordinary
+working session. Rob talks to it in plain language ("Harness: ..."); it works
+out which operation applies. Each operation is one instruction file.
 
-| Operation | Does |
-|---|---|
-| Capture | Turns "I keep doing this" into a draft skill, using Rob's existing artefacts and past sessions as context |
-| Calibrate | Runs the draft on real cases; Rob's edits become rules; accepted outputs become the skill's exemplars and tests |
-| Refine | When Rob corrects an output later, proposes a diff to the skill responsible |
-| Place | Keeps a new skill local to its project, promotes it here when a second project wants it, and lists what exists where |
-| Scout | On request, reviews recent sessions for repeated or corrected work, checks whether a solution already exists, and proposes candidates |
+| Rob says | Operation | Does |
+|---|---|---|
+| "I keep doing this, make it a skill" | Capture | Checks for prior art, then drafts a skill from Rob's existing artefacts and past sessions |
+| (same conversation) | Calibrate | Runs the draft on real cases; Rob's corrections become rules; accepted outputs become exemplars and tests |
+| "That's not how I do it" | Refine | Turns a later correction into a diff to the skill responsible |
+| "What skills do I have?" | Place | Lists what exists where; keeps new skills local; promotes one to the library when a second project wants it |
+| "Look at what I've been doing" | Scout | Reviews recent sessions for repeated or corrected work and proposes candidates, each with a prior-art check |
+
+The **prior-art check** is a shared step, run by default: a quick search for an
+existing tool or established practice, reported in a few lines as adopt, adapt
+or build.
 
 Claude may also suggest a candidate mid-session: one line, clearly marked as a
 harness suggestion, at the end of a reply and never inside the work itself.
@@ -68,6 +73,10 @@ directly.
 - **One change, one skill, one diff**, in the repo that holds it. Claude shows
   the diff; when Rob accepts, Claude commits it. This applies to this repo and
   the library only; commits in project repos stay Rob's.
+- **Every change comes with a report** in the same reply: which skill and
+  where, what changed in one sentence, the diff, a before-and-after example
+  where the output can be shown, whether saved exemplars still pass, and how
+  to undo it. Nothing is changed silently.
 - **The meta layer changes the same way**, by conversation from any session:
   "Harness: ..." to change an operation, undo a change, or see the history. An
   idea can also be noted for later.
