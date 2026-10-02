@@ -62,7 +62,7 @@ lives in one of two places:
 
 | Where | Holds | History |
 |---|---|---|
-| `global/`, the library (own repo, beside this one) | Global skills and the backlog of candidates | The library's git |
+| `global/`, the library (own repo, beside this one) | Global skills | The library's git |
 | A project's `.claude/skills/` | Skills local to that project | That project's git |
 
 A skill change is recorded only in the repo that holds the skill; it never
@@ -71,9 +71,8 @@ directly.
 
 ## How it grows
 
-- **Evidence first.** A candidate comes from real work, and is recorded in the
-  library's backlog with where it was seen. Corrections and reverts count for
-  more than repetition.
+- **Create as it comes up.** A skill is made when the need shows itself in
+  real work. Corrections and reverts count for more than repetition.
 - **One change, one skill, one diff**, in the repo that holds it. Claude shows
   the diff; when Rob accepts, Claude commits it. This applies to this repo and
   the library only; commits in project repos stay Rob's.
@@ -82,8 +81,7 @@ directly.
   where the output can be shown, whether saved exemplars still pass, and how
   to undo it. Nothing is changed silently.
 - **The meta layer changes the same way**, by conversation from any session:
-  `/harness ...` to change an operation, undo a change, or see the history. An
-  idea can also be noted for later.
+  `/harness ...` to change an operation, undo a change, or see the history.
 - **One line per change** in that repo's changelog. This file stays one page and
   always describes the current whole.
 
@@ -93,5 +91,3 @@ directly.
    wraps Claude Code's built-in skill creator where that already does the
    job. It is not used for real until all five are built.
 2. **Decide what follows** once it has been used for real.
-
-Candidate skills are listed in the library's `BACKLOG.md`.

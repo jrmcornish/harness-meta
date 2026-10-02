@@ -1,6 +1,6 @@
 ---
 name: harness
-description: Create, change, list or move Rob's own Claude Code skills from inside a working session. Invoked as /harness, or when Rob asks to turn something he keeps doing into a skill, says a skill got something wrong and should be updated, asks what skills exist or where one lives, asks to note an idea for a skill or for the harness, or wants to change how the harness itself works.
+description: Create, change, list or move Rob's own Claude Code skills from inside a working session. Invoked as /harness, or when Rob asks to turn something he keeps doing into a skill, says a skill got something wrong and should be updated, asks what skills exist or where one lives, or wants to change how the harness itself works.
 ---
 
 # Harness
@@ -15,7 +15,7 @@ plain language, and you work out which operation applies.
 | Place | Holds |
 |---|---|
 | `~/code/harness/meta` | This plugin: the harness itself, nothing else |
-| `~/code/harness/global` | The library: Rob's global skills, and `BACKLOG.md` of candidates |
+| `~/code/harness/global` | The library: Rob's global skills |
 | `<project>/.claude/skills/` | Skills local to one project |
 
 A new skill starts local to the project Rob is working in.
@@ -31,20 +31,12 @@ Read the operation's file in this folder before doing it.
 | "That's not how I do it", "I fixed your output" | Refine | `refine.md` |
 | "What skills do I have?", "Make this one global" | Place | `place.md` |
 | "Look at what I've been doing lately" | Scout | `scout.md` |
-| "Note that ..." | Note | below |
-
-**Note.** Add the idea to `~/code/harness/global/BACKLOG.md` if it is a
-candidate skill, or to `~/code/harness/meta/NOTES.md` if it is about the
-harness itself. Record where it came up. Asking for a note is the
-confirmation: write it, commit and push, say in one line what was added, and
-return to the work in hand.
 
 ## Rules for every operation
 
 - **Rob decides.** On a real fork, lay out the options, recommend one, and
   ask. Never build or install something he has not asked for.
-- **One change, one diff.** Show the diff and wait for his yes. Note is the
-  only exception.
+- **One change, one diff.** Show the diff and wait for his yes.
 - **Commits.** After his yes, commit and push in `meta` and `global`, with the
   reason in the message. In any other repo, including a project holding a
   local skill, leave the change uncommitted and tell him: he commits there.
