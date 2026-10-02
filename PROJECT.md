@@ -32,6 +32,9 @@ shared core is that audit loop, not the mathematics.
 
 ## Architecture
 
+The project folder is `~/code/harness/`, holding two separate git repos:
+`meta/` (this one) and `global/` (the skills library).
+
 Claude Code is the interface. This repo is a plugin holding only the meta
 layer: one skill that creates and manages other skills from inside an ordinary
 working session. Rob talks to it in plain language ("Harness: ..."); it works
@@ -58,7 +61,7 @@ lives in one of two places:
 
 | Where | Holds | History |
 |---|---|---|
-| Skills library (own repo, name to be chosen) | Global skills and the backlog of candidates | The library's git |
+| `global/`, the library (own repo, beside this one) | Global skills and the backlog of candidates | The library's git |
 | A project's `.claude/skills/` | Skills local to that project | That project's git |
 
 A skill change is recorded only in the repo that holds the skill; it never
