@@ -43,6 +43,11 @@ Read the operation's file in this folder before doing it.
 - **Say what changed.** Every reply that changes a skill names the skill and
   where it lives, says what changed in one sentence, shows the diff, and says
   how to undo it.
+- **Warn about clashes.** If the skill you are about to create, change or
+  move has the same name as one in another place, tell Rob before doing
+  anything. See `place.md`.
+- **Never rewrite git history.** No amending, rebasing or force-pushing; undo
+  by a new commit that reverts.
 - **Keep replies short**, and lead with the conclusion.
 
 ## Changing the harness itself
