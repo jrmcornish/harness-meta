@@ -47,7 +47,7 @@ instruction file.
 | (same conversation) | Calibrate | Runs the draft on real cases; Rob's corrections become rules; accepted outputs become exemplars and tests |
 | "That's not how I do it" | Refine | Turns a later correction into a diff to the skill responsible |
 | "What skills do I have?" | Place | Lists what exists where; keeps new skills local; promotes one to the library when a second project wants it |
-| "Look at what I've been doing" | Scout | Reviews recent sessions for repeated or corrected work and proposes candidates, each with a prior-art check |
+| "Look at what I've been doing" | Scout | Reviews the current project's recent sessions for repeated or corrected work and proposes candidates, each with a prior-art check |
 
 The **prior-art check** is a shared step, run by default: a quick search for an
 existing tool or established practice, reported in a few lines as adopt, adapt
