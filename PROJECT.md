@@ -37,8 +37,9 @@ The project folder is `~/code/harness/`, holding two separate git repos:
 
 Claude Code is the interface. This repo is a plugin holding only the meta
 layer: one skill that creates and manages other skills from inside an ordinary
-working session. Rob talks to it in plain language ("Harness: ..."); it works
-out which operation applies. Each operation is one instruction file.
+working session. Rob invokes it with `/harness <request>`, or asks in plain
+language; it works out which operation applies. Each operation is one
+instruction file.
 
 | Rob says | Operation | Does |
 |---|---|---|
@@ -81,7 +82,7 @@ directly.
   where the output can be shown, whether saved exemplars still pass, and how
   to undo it. Nothing is changed silently.
 - **The meta layer changes the same way**, by conversation from any session:
-  "Harness: ..." to change an operation, undo a change, or see the history. An
+  `/harness ...` to change an operation, undo a change, or see the history. An
   idea can also be noted for later.
 - **One line per change** in that repo's changelog. This file stays one page and
   always describes the current whole.
