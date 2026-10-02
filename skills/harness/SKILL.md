@@ -26,15 +26,12 @@ Read the operation's file in this folder before doing it.
 
 | Rob says something like | Operation | File |
 |---|---|---|
-| "I keep doing this, make it a skill" | Capture | not built yet |
-| (continuing a capture) | Calibrate | not built yet |
-| "That's not how I do it", "I fixed your output" | Refine | not built yet |
-| "What skills do I have?", "Make this one global" | Place | not built yet |
-| "Look at what I've been doing lately" | Scout | not built yet |
+| "I keep doing this, make it a skill" | Capture | `capture.md` |
+| (continuing a capture) | Calibrate | `calibrate.md` |
+| "That's not how I do it", "I fixed your output" | Refine | `refine.md` |
+| "What skills do I have?", "Make this one global" | Place | `place.md` |
+| "Look at what I've been doing lately" | Scout | `scout.md` |
 | "Note that ..." | Note | below |
-
-If Rob asks for an operation that is not built yet, say so and stop. Do the
-request by hand, under the rules below, only if he then asks you to.
 
 **Note.** Add the idea to `~/code/harness/global/BACKLOG.md` if it is a
 candidate skill, or to `~/code/harness/meta/NOTES.md` if it is about the

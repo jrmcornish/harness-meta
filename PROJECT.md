@@ -89,9 +89,9 @@ directly.
 
 ## Next steps
 
-1. **Build the meta harness**: the entry point, Capture, Calibrate, the
-   prior-art check and the change report. It wraps Claude Code's built-in
-   skill creator where that already does the job.
+1. **Build the meta harness**: the entry point and all five operations. It
+   wraps Claude Code's built-in skill creator where that already does the
+   job. It is not used for real until all five are built.
 2. **Decide what follows** once it has been used for real.
 
 Candidate skills are listed in the library's `BACKLOG.md`.
