@@ -1,12 +1,12 @@
-# Scout
+# Review
 
 Look back over Rob's recent sessions in the current project for work that a
 skill would improve, and come back with a short list for him to choose from.
-Scout builds nothing.
+Review builds nothing.
 
 ## Steps
 
-1. **Settle the scope.** Scout looks at the project Rob is working in, and
+1. **Settle the scope.** Review looks at the project Rob is working in, and
    by default at its last two weeks. Look at another project, or a different
    period, only if he asks.
 
@@ -29,15 +29,15 @@ Scout builds nothing.
    goes well needs no skill.
 
 4. **Check each candidate.**
-   - Is it already a skill? List them as Place does. If one exists and still
-     gets corrected, the candidate is a Refine of that skill.
+   - Is it already a skill? List them as Manage does. If one exists and still
+     gets corrected, the candidate is an Update of that skill.
    - Is it already solved elsewhere? Do the quick prior-art check from
      Create step 1.
 
 5. **Report at most five candidates**, best first. For each: what it is in
    one line; the evidence, as a rough count and two of Rob's own messages
    quoted with their dates; and one verdict: create a skill, adopt an existing
-   tool, refine an existing skill, or leave it. Say how many sessions and
+   tool, update an existing skill, or leave it. Say how many sessions and
    messages you read.
 
 6. **Stop there.** Rob picks, and picking one starts Create.

@@ -41,7 +41,7 @@ Nothing is changed without showing you the diff and waiting for your yes.
 | Path | Holds |
 |---|---|
 | `skills/harness/SKILL.md` | The entry point and the rules every operation follows |
-| `skills/harness/{create,refine,place,scout}.md` | One file per operation |
-| `skills/harness/calibrate.md` | The correction loop that Create and Refine share |
+| `skills/harness/{create,update,manage,review}.md` | One file per operation |
+| `skills/harness/test.md` | The try-and-correct loop that Create and Update share |
 | `skills/harness/scripts/` | Helper scripts |
 | `.claude-plugin/plugin.json` | The plugin's name and version |

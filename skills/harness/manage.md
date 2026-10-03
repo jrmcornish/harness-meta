@@ -1,4 +1,4 @@
-# Place
+# Manage
 
 Say what skills Rob has and where, and move a skill between places.
 

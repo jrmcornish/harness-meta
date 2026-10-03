@@ -1,7 +1,7 @@
-# Calibrate: the loop
+# Test: the loop
 
-How a skill gets corrected with Rob. Create uses it on a new draft; Refine
-uses it after changing an existing skill.
+How a skill is tried and corrected with Rob. Create uses it on a new draft;
+Update uses it after changing an existing skill.
 
 A skill is only a guess at how Rob wants something done. The best way to
 judge it is usually not by reading its rules directly (although sometimes

@@ -15,7 +15,7 @@ something small in front of him early, not to arrive with a finished design.
 
    Check first that the skill does not already exist: in the project's
    `.claude/skills/`, in `~/code/harness/global/skills/`, or loose in
-   `~/.claude/skills/`. If it does, this is a Refine.
+   `~/.claude/skills/`. If it does, this is an Update.
 
    Two things hold whatever you do:
    - Never experiment on Rob's real data. Build throwaway data and try
@@ -45,8 +45,8 @@ something small in front of him early, not to arrive with a finished design.
    that `SKILL.md` points to, so it is read only when needed.
 
    A local skill goes in `<project>/.claude/skills/`. A global one goes in
-   `~/code/harness/global/skills/`; check "Library setup" in `place.md`
+   `~/code/harness/global/skills/`; check "Library setup" in `manage.md`
    first.
 
-4. **Go into the loop** in `calibrate.md`: try the draft on cases with Rob
+4. **Go into the loop** in `test.md`: try the draft on cases with Rob
    until he accepts it.

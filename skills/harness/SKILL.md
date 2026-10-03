@@ -28,9 +28,9 @@ Read the operation's file in this folder before doing it.
 | Rob says something like | Operation | File |
 |---|---|---|
 | "I keep doing this, make it a skill" | Create | `create.md` |
-| "That's not how I do it", "I fixed your output" | Refine | `refine.md` |
-| "What skills do I have?", "Make this one global" | Place | `place.md` |
-| "Look at what I've been doing lately" | Scout | `scout.md` |
+| "That's not how I do it", "I fixed your output" | Update | `update.md` |
+| "What skills do I have?", "Make this one global" | Manage | `manage.md` |
+| "Look at what I've been doing lately" | Review | `review.md` |
 
 ## Rules for every operation
 
@@ -51,7 +51,7 @@ Read the operation's file in this folder before doing it.
   was never made.
 - **Warn about clashes.** If the skill you are about to create, change or
   move has the same name as one in another place, tell Rob before doing
-  anything. See `place.md`.
+  anything. See `manage.md`.
 - **Never rewrite git history.** No amending, rebasing or force-pushing; undo
   by a new commit that reverts.
 - **Keep replies short**, and lead with the conclusion.

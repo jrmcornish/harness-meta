@@ -1,4 +1,4 @@
-# Refine
+# Update
 
 Change an existing skill because it got something wrong in real work. Rob
 says so, or fixes the output by hand.
@@ -12,7 +12,7 @@ kind of correction this is.
 1. **Find the skill responsible** and where it lives: the project's
    `.claude/skills/`, `~/code/harness/global/skills/`, or loose in
    `~/.claude/skills/`. If no skill produced
-   the output, this is not a Refine; say so.
+   the output, this is not an Update; say so.
 
 2. **Establish the correction.** Use Rob's words. If he edited the output by
    hand, compare his version with what the skill produced and list what he
@@ -30,7 +30,7 @@ kind of correction this is.
    If the correction contradicts an existing rule that has its own source,
    show Rob both and ask which holds.
 
-5. **Go into the loop** in `calibrate.md` at its step 5: rerun the case that
+5. **Go into the loop** in `test.md` at its step 5: rerun the case that
    went wrong and every saved case, show Rob the outputs, and carry on from
    there until he accepts. An output he had accepted that now comes out
    differently is the thing to show him first.
