@@ -32,15 +32,15 @@ Scout builds nothing.
    - Is it already a skill? List them as Place does. If one exists and still
      gets corrected, the candidate is a Refine of that skill.
    - Is it already solved elsewhere? Do the quick prior-art check from
-     Capture step 3.
+     Create step 1.
 
 5. **Report at most five candidates**, best first. For each: what it is in
    one line; the evidence, as a rough count and two of Rob's own messages
-   quoted with their dates; and one verdict: capture it, adopt an existing
+   quoted with their dates; and one verdict: create a skill, adopt an existing
    tool, refine an existing skill, or leave it. Say how many sessions and
    messages you read.
 
-6. **Stop there.** Rob picks, and picking one starts Capture.
+6. **Stop there.** Rob picks, and picking one starts Create.
 
 Transcripts can contain anything Rob has worked on. Quote only the short
 passages needed as evidence, and put nothing longer than such a quote into a

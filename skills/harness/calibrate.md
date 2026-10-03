@@ -1,26 +1,36 @@
-# Calibrate
+# Calibrate: the loop
 
-Try a draft skill on real cases and correct it with Rob until it does the
-task the way he does. This follows Capture in the same conversation.
+How a skill gets corrected with Rob. Create uses it on a new draft; Refine
+uses it after changing an existing skill.
 
-A draft is only a guess at Rob's style. The best way to judge it is usually not by reading its
-rules directly (although sometimes this can be helpful); he can judge what it produces. So each round shows him outputs, and
-his reactions become the rules.
+A skill is only a guess at how Rob wants something done. The best way to
+judge it is usually not by reading its rules directly (although sometimes
+this can be helpful); he can judge what it produces. So each round shows him
+outputs, and his reactions become the rules.
 
 ## Steps
 
-1. **Pick two or three real cases** from the project: things the skill
-   should be able to do. Do not reuse the artefacts the draft was written
-   from, or the test only shows copying. Prefer cases Rob has already done by
-   hand, so there is something to compare against. Tell him which you picked.
+1. **Pick the cases.** Two or three real things the skill should be able to
+   do, plus any cases already saved in the skill's `examples/`. Do not reuse
+   what a new draft was written from, or the test only shows copying. Prefer
+   cases Rob has already done by hand, so there is something to compare
+   against. Tell him which you picked.
+
+   If the skill changes things, such as moving files, editing configuration
+   or sending anything, build throwaway cases for it and run it only on
+   those. Never test such a skill on Rob's real data.
 
 2. **Run the skill as a stranger would.** Give each case to a fresh subagent
    that has the skill folder and the case, and nothing from this
-   conversation. You wrote the draft knowing more than it says; a later
-   session will know only what is written down.
+   conversation. You know more than the skill says; a later session will
+   know only what is written down.
 
 3. **Show the outputs, not a description of them.** Render anything visual
    and show the picture. Put Rob's own version beside it where one exists.
+   Where there is a tool he would normally use to edit that kind of output,
+   open the output in it so that he can correct it there and then, and read
+   the result back as his edit. The skill says which tool; the loop only
+   asks for one.
 
 4. **Turn each correction into a rule.** Rob will comment, or edit an output
    by hand; if he edits, compare his version with yours to see what he
@@ -37,9 +47,9 @@ his reactions become the rules.
    to proceed.
 
 7. **Save the accepted outputs** in the skill's `examples/`, each with the
-   request that produced it. They are the cases Refine reruns later. Then
-   tell Rob the skill is ready and where it is.
+   request that produced it, so they can be rerun later. Then tell Rob the
+   skill is ready and where it is.
 
 Keep each round small: the outputs, what changed in the rules, nothing else.
-If there are many outputs to compare, the `skill-creator` skill has a review
-page that shows them side by side; offer it, do not default to it.
+If there are many outputs to compare, `anthropic-skills:skill-creator` has a
+review page that shows them side by side; offer it, do not default to it.

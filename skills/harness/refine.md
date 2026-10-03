@@ -10,7 +10,8 @@ kind of correction this is.
 ## Steps
 
 1. **Find the skill responsible** and where it lives: the project's
-   `.claude/skills/` or `~/code/harness/global/skills/`. If no skill produced
+   `.claude/skills/`, `~/code/harness/global/skills/`, or loose in
+   `~/.claude/skills/`. If no skill produced
    the output, this is not a Refine; say so.
 
 2. **Establish the correction.** Use Rob's words. If he edited the output by
@@ -29,14 +30,7 @@ kind of correction this is.
    If the correction contradicts an existing rule that has its own source,
    show Rob both and ask which holds.
 
-5. **Rerun the saved cases.** Run the skill's `examples/` again as Calibrate
-   does, with a fresh subagent that sees only the skill, and run its check
-   script if it has one. If an output Rob had accepted now comes out
-   differently, show him.
-
-6. **Keep the corrected output** in `examples/` if it covers something the
-   existing examples do not.
-
-7. **Show Rob the change and wait for his yes**, as the rules in `SKILL.md`
-   require: which skill, what changed, the diff, a before and after where the
-   output can be shown, and the result of step 5.
+5. **Go into the loop** in `calibrate.md` at its step 5: rerun the case that
+   went wrong and every saved case, show Rob the outputs, and carry on from
+   there until he accepts. An output he had accepted that now comes out
+   differently is the thing to show him first.

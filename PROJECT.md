@@ -43,8 +43,7 @@ instruction file.
 
 | Rob says | Operation | Does |
 |---|---|---|
-| "I keep doing this, make it a skill" | Capture | Checks for prior art, then drafts a skill from Rob's existing artefacts and past sessions |
-| (same conversation) | Calibrate | Runs the draft on real cases; Rob's corrections become rules; accepted outputs become exemplars and tests |
+| "I keep doing this, make it a skill" | Create | Looks into how the task should be done, comes back to Rob with what it found and the choices that are his, builds the smallest draft, then corrects it with him on real cases |
 | "That's not how I do it" | Refine | Turns a later correction into a diff to the skill responsible |
 | "What skills do I have?" | Place | Lists what exists where; keeps new skills local; promotes one to the library when a second project wants it |
 | "Look at what I've been doing" | Scout | Reviews the current project's recent sessions for repeated or corrected work and proposes candidates, each with a prior-art check |
@@ -87,7 +86,9 @@ directly.
 
 ## Next steps
 
-1. **Build the meta harness**: the entry point and all five operations. It
-   wraps Claude Code's built-in skill creator where that already does the
-   job. It is not used for real until all five are built.
-2. **Decide what follows** once it has been used for real.
+1. **Build the meta harness**: the entry point and the four operations.
+   Done 2 Oct 2026; it wraps Claude Code's built-in skill creator where that
+   already does the job.
+2. **Use it**, starting with a global skill for moving a Claude Code
+   conversation to another folder, then a profile of Rob's preferences.
+3. **Decide what follows** from what real use shows.

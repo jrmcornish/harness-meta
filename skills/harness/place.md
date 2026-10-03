@@ -42,8 +42,18 @@ leaves an uncommitted change in the project. The skill's earlier history
 stays in the repo it came from, so say in the library's commit message where
 that is: the project's path and its latest commit for the skill.
 
-If the library has no `.claude-plugin/plugin.json` yet, create one with the
-name `global`, so that Claude Code loads the library as a plugin.
+## Library setup
+
+The library is loaded in every session only if both of these exist:
+
+- `~/code/harness/global/.claude-plugin/plugin.json`, naming the plugin
+  `global`;
+- a link at `~/.claude/skills/global` pointing to `~/code/harness/global`.
+
+Check both whenever a skill is about to go into the library. If either is
+missing, warn Rob that library skills will not load in other sessions, and
+offer to set it up. Creating the link changes his Claude Code configuration,
+so do it only on his yes.
 
 ## Clashes
 

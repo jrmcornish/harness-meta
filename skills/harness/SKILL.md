@@ -27,8 +27,7 @@ Read the operation's file in this folder before doing it.
 
 | Rob says something like | Operation | File |
 |---|---|---|
-| "I keep doing this, make it a skill" | Capture | `capture.md` |
-| (continuing a capture) | Calibrate | `calibrate.md` |
+| "I keep doing this, make it a skill" | Create | `create.md` |
 | "That's not how I do it", "I fixed your output" | Refine | `refine.md` |
 | "What skills do I have?", "Make this one global" | Place | `place.md` |
 | "Look at what I've been doing lately" | Scout | `scout.md` |
@@ -37,13 +36,19 @@ Read the operation's file in this folder before doing it.
 
 - **Rob decides.** On a real fork, lay out the options, recommend one, and
   ask. Never build or install something he has not asked for.
-- **One change, one diff.** Show the diff and wait for his yes.
-- **Commits.** After his yes, commit and push in `meta` and `global`, with the
+- **One change, one diff.** Make the change in the working files, show Rob
+  the diff, and wait for his yes. For a new skill, show a short summary of
+  its rules in place of the whole file. If he says no, restore the files.
+- **Commits.** Nothing is committed before his yes. After it, commit and
+  push in `meta` and `global`, with the
   reason in the message. In any other repo, including a project holding a
   local skill, leave the change uncommitted and tell him: he commits there.
 - **Say what changed.** Every reply that changes a skill names the skill and
   where it lives, says what changed in one sentence, shows the diff, and says
   how to undo it.
+  The diff is taken from the files after the change, with `git diff` or by
+  reading them back, never typed out: a typed diff can describe a change that
+  was never made.
 - **Warn about clashes.** If the skill you are about to create, change or
   move has the same name as one in another place, tell Rob before doing
   anything. See `place.md`.
