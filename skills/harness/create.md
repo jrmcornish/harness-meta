@@ -29,7 +29,11 @@ something small in front of him early, not to arrive with a finished design.
    output. Never read a transcript whole.
 
 2. **Come back to Rob before building.** In a few lines: what you found, the
-   shape you propose, and the choices that are his to make. Include whether
+   shape you propose, and the choices that are his to make. If something
+   that already exists does most of the job, lead with that, and say what
+   Rob would have to change in how he works to use it. His request describes
+   the goal, not the design: a lighter way that costs him a small change of
+   habit beats a faithful build of what he described. Include whether
    the skill is local to this project or global, and anything you would
    otherwise have to guess. Wait for his answer.
 
