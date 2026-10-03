@@ -25,6 +25,10 @@ outputs, and his reactions become the rules.
    conversation. You know more than the skill says; a later session will
    know only what is written down.
 
+   When a case is something Rob types into Claude Code himself, such as a
+   slash command, no subagent can run it. Then the test is Rob doing the
+   steps while you check the result.
+
 3. **Show the outputs, not a description of them.** Render anything visual
    and show the picture. Put Rob's own version beside it where one exists.
    Where there is a tool he would normally use to edit that kind of output,

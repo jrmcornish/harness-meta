@@ -19,7 +19,14 @@ plain language, and you work out which operation applies.
 | `~/code/harness/global` | The library: Rob's global skills |
 | `<project>/.claude/skills/` | Skills local to one project |
 
-A new skill starts local to the project Rob is working in.
+A new skill is local to the project Rob is working in, unless he says it is
+global or it is not about any one project. If in doubt, for example when it
+is not clear that the current folder is a project at all, ask.
+
+The `allowed-tools` line above is permission, not restriction: it lets this
+skill read the two harness repos, Rob's skills and his session history from
+any project without a prompt. Every other tool works as usual, with the
+usual prompts.
 
 ## Operations
 

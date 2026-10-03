@@ -17,9 +17,10 @@ Ignore `~/.claude/skills/synced/`: those are Anthropic's, not Rob's.
 
 ## List
 
-Find every skill in the three places. For local skills, search Rob's home
-folder for `.claude/skills` directories, a few levels deep, leaving out
-`~/.claude` itself.
+Find every skill in the three places. For local skills, search Rob's whole
+home folder for `.claude/skills` directories, to any depth, skipping
+`~/.claude` itself and `.git` and `node_modules` folders:
+`find ~ \( -name .git -o -name node_modules -o -path ~/.claude \) -prune -o -type d -path '*/.claude/skills' -print`.
 
 Show one table: name, place, one line on what it does, when it last changed
 (from git where there is git, the file date otherwise). Point out anything
