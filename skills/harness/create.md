@@ -34,8 +34,9 @@ something small in front of him early, not to arrive with a finished design.
    Rob would have to change in how he works to use it. His request describes
    the goal, not the design: a lighter way that costs him a small change of
    habit beats a faithful build of what he described. Include whether
-   the skill is local to this project or global, and anything you would
-   otherwise have to guess. Wait for his answer.
+   the skill is local to this project or global; if global, check "Library
+   setup" in `manage.md` and include its offer if anything is missing. Add
+   anything else you would otherwise have to guess. Wait for his answer.
 
 3. **Build the smallest draft that does what he confirmed.** A folder
    `<name>/` with a `SKILL.md`: a description saying what the skill does and
@@ -48,9 +49,8 @@ something small in front of him early, not to arrive with a finished design.
    wrong. Anything long, such as reference material, goes in its own file
    that `SKILL.md` points to, so it is read only when needed.
 
-   A local skill goes in `<project>/.claude/skills/`. A global one goes in
-   `~/code/harness/global/skills/`; check "Library setup" in `manage.md`
-   first.
+   A local skill goes in `<project>/.claude/skills/`, a global one in
+   `~/code/harness/global/skills/`.
 
 4. **Go into the loop** in `test.md`: try the draft on cases with Rob
    until he accepts it.
