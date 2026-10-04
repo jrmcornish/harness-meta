@@ -20,16 +20,16 @@ something small in front of him early, not to arrive with a finished design.
    Two things hold whatever you do:
    - Never experiment on Rob's real data. Build throwaway data and try
      things on that.
-   - What a search or the documentation tells you is a claim. Test it before
-     building on it. If it cannot be tested, say so.
+   - What a search or the documentation tells you is a claim. Say what you
+     have tested and what you are taking on trust.
 
    To read past sessions, `scripts/user_messages.py` in this skill's folder
    prints only what Rob typed. Give it full paths to folders under
    `~/.claude/projects/`, since their names begin with `-`, and search its
    output. Never read a transcript whole.
 
-2. **Come back to Rob before building.** In a few lines: what you found, the
-   shape you propose, and the choices that are his to make. If something
+2. **Come back to Rob before building**, with what you found, the shape you
+   propose, and the choices that are his to make. If something
    that already exists does most of the job, lead with that, and say what
    Rob would have to change in how he works to use it. His request describes
    the goal, not the design: a lighter way that costs him a small change of

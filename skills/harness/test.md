@@ -68,25 +68,13 @@ review page that shows them side by side; offer it, do not default to it.
 
 ## Testing Claude Code itself
 
-When a skill is about Claude Code, its sessions, storage, commands or
-configuration, the way to learn how it behaves is to try things; and a change
-to the harness is checked by loading it in a fresh session (`claude plugin
-validate` first, then `claude -p` in a throwaway folder). Both mean running
-Claude Code from inside Claude Code, which has pitfalls that are easy to
-mistake for results:
+When the feature is about Claude Code, or a change to the harness is being
+checked in a fresh session, you are running Claude Code from inside Claude
+Code. Two things about that are easy to mistake for results:
 
-- **Use a throwaway folder** under the session's scratchpad. A conversation
-  made there with `claude -p "..." --output-format json` returns its session
-  ID, and its store appears under `~/.claude/projects/` with the folder's
-  path encoded (every character that is not a letter or digit becomes `-`).
-  Delete both the folder and its store afterwards. Never touch the store of
-  the session you are in.
-- **A nested `claude` may not save its conversation.** If no store appears,
-  run it with the `CLAUDE*` environment variables cleared:
-  `env $(env | grep -oE '^CLAUDE[A-Z_]*' | sed 's/^/-u /') claude ...`
-- **Non-interactive runs cannot do everything.** With `claude -p` there is
-  no screen: slash commands such as `/cd` report themselves unavailable,
-  permission prompts become refusals, and the folder-trust dialog cannot be
-  answered. Anything interactive needs a real terminal, which no subagent
-  can drive either: ask Rob to do that step, or drive a terminal yourself
-  with `tmux`, remembering that Rob's sessions use vim key bindings.
+- **A nested `claude` may not save its conversation.** If no store appears
+  under `~/.claude/projects/`, run it with the `CLAUDE*` environment
+  variables cleared.
+- **Non-interactive runs (`claude -p`) cannot do interactive things**: slash
+  commands, permission prompts and the folder-trust dialog. Those need a real
+  terminal, which a subagent cannot drive either; ask Rob to do that step.
