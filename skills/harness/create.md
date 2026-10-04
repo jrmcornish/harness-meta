@@ -41,9 +41,14 @@ something small in front of him early, not to arrive with a finished design.
 3. **Build the smallest draft that does what he confirmed.** A folder
    `<name>/` with a `SKILL.md`: a description saying what the skill does and
    when to use it, then the rules. Say briefly where each rule came from, and
-   mark a guess as a guess. Put any mechanical part in a script. Where the
-   skill is about how something should look, include a few of Rob's own
-   examples. All else being equal, shorter is better, so he will be able to read it.
+   mark a guess as a guess. Be exact about what Rob wants and what the
+   result must be, and sparing about how: tools change, so a rule that would
+   be wrong after a Claude Code update should state the goal instead. Prefer
+   rules a session applies at the time over a script; write a script only
+   when the loop shows that rules alone are not enough. A skill that changes
+   anything outside the conversation shows Rob what it is about to do and
+   waits for his yes. Where the skill is about how something should look,
+   include a few of Rob's own examples. All else being equal, shorter is better, so he will be able to read it.
    Write rules as reasons, not orders, so that a reader can apply them to a
    case the rule did not foresee, and only where the obvious thing would be
    wrong. Anything long, such as reference material, goes in its own file
