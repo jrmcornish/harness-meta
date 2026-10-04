@@ -28,10 +28,15 @@ outputs, and his reactions become the rules.
    conversation. You know more than the files say; a later session will know
    only what is written down.
 
+   If the feature itself stops to ask Rob, the stranger stops there and
+   reports; Rob's answer is passed back to it.
+
    For the harness itself, a case is a request Rob might type, and the
    stranger is a subagent given only the harness files and that request.
    Its output is what it did and its account of where the instructions were
-   unclear, missing something, or wrong.
+   unclear, missing something, or wrong. After a change to the harness, test
+   with a new stranger from the start; a stranger from an earlier run already
+   knows too much.
 
    When a case is something Rob types into Claude Code himself, such as a
    slash command, no subagent can run it. Then the test is Rob doing the

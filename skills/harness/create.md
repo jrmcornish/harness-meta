@@ -40,14 +40,16 @@ something small in front of him early, not to arrive with a finished design.
 
 3. **Build the smallest draft that does what he confirmed.** A folder
    `<name>/` with a `SKILL.md`: a description saying what the skill does and
-   when to use it, then the rules. Say briefly where each rule came from, and
-   mark a guess as a guess. Be exact about what Rob wants and what the
-   result must be, and sparing about how: tools change, so a rule that would
-   be wrong after a Claude Code update should state the goal instead. Prefer
-   rules a session applies at the time over a script; write a script only
+   when to use it, then three things and nothing else:
+   - what the result must be;
+   - Rob's preferences for this task, exact, with where each came from;
+   - hints: facts that were true when last checked, dated, to be verified
+     rather than relied on.
+   Not steps, commands or scripts for the mechanism: tools change, and the
+   session doing the task works the mechanism out at the time. A script only
    when the loop shows that rules alone are not enough. A skill that changes
    anything outside the conversation shows Rob what it is about to do and
-   waits for his yes. Where the skill is about how something should look,
+   waits for his yes. Mark a guess as a guess. Where the skill is about how something should look,
    include a few of Rob's own examples. All else being equal, shorter is better, so he will be able to read it.
    Write rules as reasons, not orders, so that a reader can apply them to a
    case the rule did not foresee, and only where the obvious thing would be
@@ -57,5 +59,5 @@ something small in front of him early, not to arrive with a finished design.
    A local skill goes in `<project>/.claude/skills/`, a global one in
    `~/code/harness/global/skills/`.
 
-4. **Go into the loop** in `test.md`: try the draft on cases with Rob
-   until he accepts it.
+4. **Go into the loop** in `test.md` straight away: Rob sees the draft
+   together with the first round's outputs, not before.
