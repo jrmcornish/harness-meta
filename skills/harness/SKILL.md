@@ -1,6 +1,6 @@
 ---
 name: harness
-description: Create, change, list or move Rob's own Claude Code skills from inside a working session. Invoked as /harness, or when Rob asks to turn something he keeps doing into a skill, says a skill got something wrong and should be updated, asks what skills exist or where one lives, or wants to change how the harness itself works. Separately, in any session: when Rob corrects output that a skill produced, or corrects the same kind of output more than once, you may end a reply with one line starting "Harness suggestion:" that offers to update the skill or to create one, at most once per topic.
+description: Create, change, list or move Rob's own Claude Code skills from inside a working session. Invoked as /harness, or when Rob asks to turn something he keeps doing into a skill, says a skill got something wrong and should be updated, asks what skills exist or where one lives, asks to test a skill or the harness, or wants to change how the harness itself works. Separately, in any session: when Rob corrects output that a skill produced, or corrects the same kind of output more than once, you may end a reply with one line starting "Harness suggestion:" that offers to update the skill or to create one, at most once per topic.
 allowed-tools: Read(~/.claude/skills/**) Read(~/code/harness/**) Read(~/.claude/projects/**)
 ---
 
@@ -38,6 +38,11 @@ Read the operation's file in this folder before doing it.
 | "That's not how I do it", "I fixed your output" | Update | `update.md` |
 | "What skills do I have?", "Make this one global" | Manage | `manage.md` |
 | "Look at what I've been doing lately" | Review | `review.md` |
+| "Test the tikzit skill", "Does the harness still work?" | Test | `test.md` |
+
+Test is the loop in which a feature is tried on real cases and corrected
+with Rob until he accepts it. Create and Update both end in it; Rob can also
+ask for it on its own.
 
 ## Rules for every operation
 
@@ -47,9 +52,9 @@ Read the operation's file in this folder before doing it.
   the diff, and wait for his yes. For a new skill, show a short summary of
   its rules in place of the whole file. If he says no, restore the files.
 - **Commits.** Nothing is committed before his yes. After it, commit and
-  push in `meta` and `global`, with the
-  reason in the message. In any other repo, including a project holding a
-  local skill, leave the change uncommitted and tell him: he commits there.
+  push in `meta` and `global`, with the reason in the message. In any other
+  repo, including a project holding a local skill, leave the change
+  uncommitted and tell him: he commits there.
 - **Say what changed.** Every reply that changes a skill names the skill and
   where it lives, says what changed in one sentence, shows the diff, and says
   how to undo it.
@@ -65,7 +70,16 @@ Read the operation's file in this folder before doing it.
 
 ## Changing the harness itself
 
-The same loop applies: the files in this folder are changed by one small diff
-at a time, shown to Rob, committed after his yes. "Undo that harness change"
-means reverting the last commit in `meta`. `PROJECT.md` in `meta` describes
-the design and is updated only when the overall shape changes.
+The files in this folder are changed by one small diff at a time, shown to
+Rob, committed after his yes, and tested in the loop in `test.md` like any
+other feature. "Undo that harness change" means reverting the last commit in
+`meta`. `PROJECT.md` in `meta` describes the design and is updated only when
+the overall shape changes. To check a change, run it in a fresh session.
+
+## Working on Claude Code itself
+
+Two kinds of work here mean running Claude Code from inside Claude Code:
+checking a change to the harness, and any skill that is about Claude Code,
+its sessions, storage, commands or configuration. Both have traps that are
+easy to mistake for results. Read "Testing Claude Code itself" in `test.md`
+before either.

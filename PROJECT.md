@@ -47,6 +47,7 @@ instruction file.
 | "That's not how I do it" | Update | Turns a later correction into a diff to the skill responsible |
 | "What skills do I have?" | Manage | Lists what exists where; keeps new skills local; promotes one to the library when a second project wants it |
 | "Look at what I've been doing" | Review | Reviews the current project's recent sessions for repeated or corrected work and proposes candidates, each with a prior-art check |
+| "Test the tikzit skill" | Test | Tries a feature on real cases and corrects it with Rob until he accepts it; Create and Update end in it, and a change to the harness goes through it |
 
 The **prior-art check** is a shared step, run by default: a quick search for an
 existing tool or established practice, reported in a few lines as adopt, adapt
