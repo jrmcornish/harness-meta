@@ -59,9 +59,11 @@ outputs, and his reactions become the rules.
 5. **Run every case again**, including ones he already accepted, so a new
    rule does not break an old case. Repeat from step 3.
 
-6. **Stop when Rob accepts every output unchanged**, or says it is good
-   enough. If two rounds bring no improvement, say so and ask how he wants
-   to proceed.
+6. **Stop when Rob accepts the outputs for the main cases**, or says it is
+   good enough. The loop is for the main cases, not every case: an edge case
+   that comes up is noted in the feature as open and left for Update when it
+   arises in real use. If two rounds bring no improvement, say so and ask how
+   he wants to proceed.
 
 7. **Save the accepted outputs** in the skill's `examples/`, each with the
    request that produced it, so they can be rerun later. Then tell Rob the

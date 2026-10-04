@@ -35,8 +35,10 @@ something small in front of him early, not to arrive with a finished design.
    the goal, not the design: a lighter way that costs him a small change of
    habit beats a faithful build of what he described. Include whether
    the skill is local to this project or global; if global, check "Library
-   setup" in `manage.md` and include its offer if anything is missing. Add
-   anything else you would otherwise have to guess. Wait for his answer.
+   setup" in `manage.md` and include its offer if anything is missing. Ask
+   only what decides the shape. Skills are built up on a rolling basis: a
+   question that matters only in an edge case is left until the case arises
+   in real use, when Update takes it. Wait for his answer.
 
 3. **Build the smallest draft that does what he confirmed.** A folder
    `<name>/` with a `SKILL.md`: a description saying what the skill does and
