@@ -6,6 +6,12 @@ change to the harness itself. Rob can also ask for a test directly, for
 example after editing a skill by hand or after a Claude Code update; then
 start at step 1 with the feature he names.
 
+Test in proportion to the risk. A feature that shows Rob its plan before
+acting, or whose output he will look at before using, is tested by its first
+real use with him watching; the rounds below are for features whose mistakes
+would be costly or hard to see, or whose output he cannot judge one case at a
+time.
+
 A feature is only a guess at how Rob wants something done. The best way to
 judge it is usually not by reading its rules directly (although sometimes
 this can be helpful); he can judge what it produces. So each round shows him

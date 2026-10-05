@@ -43,7 +43,7 @@ instruction file.
 
 | Rob says | Operation | Does |
 |---|---|---|
-| "I keep doing this, make it a skill" | Create | Looks into how the task should be done, comes back to Rob with what it found and the choices that are his, builds the smallest draft, then corrects it with him on real cases |
+| "I keep doing this, make it a skill" | Create | Asks Rob the one or two questions that decide the shape, writes the bare minimum, and tests in proportion to the risk; corner cases wait for Update |
 | "That's not how I do it" | Update | Turns a later correction into a diff to the skill responsible |
 | "What skills do I have?" | Manage | Lists what exists where; keeps new skills local; promotes one to the library when a second project wants it |
 | "Look at what I've been doing" | Review | Reviews the current project's recent sessions for repeated or corrected work and proposes candidates, each with a prior-art check |
