@@ -46,6 +46,11 @@ ask for it on its own.
 
 ## Rules for every operation
 
+- **Iterate.** A skill starts as the smallest version that covers the main
+  case and the few corner cases that would clearly bite, such as one that
+  Rob hits every time or one where a mistake is costly. The rest are dealt
+  with as they come up in real use, through Update. Do not hold a skill back
+  until every case is settled.
 - **Rob decides.** On a real fork, lay out the options, recommend one, and
   ask. Never build or install something he has not asked for.
 - **One change, one diff.** Make the change in the working files, show Rob

@@ -1,9 +1,9 @@
 # Create
 
 Turn something Rob keeps doing into a skill: the smallest version that covers
-the main case, with him in the loop. Skills are built up on a rolling basis.
-Corner cases are handled by Update when they arise in real use, so the aim is
-not to foresee them now.
+the main case and the few corner cases that would clearly bite, with him in
+the loop. Skills are built up on a rolling basis: the rest is handled by
+Update when it arises in real use.
 
 ## Steps
 

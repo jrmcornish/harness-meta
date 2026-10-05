@@ -1,7 +1,9 @@
 # Update
 
-Change an existing skill because it got something wrong in real work. Rob
-says so, or fixes the output by hand.
+Change an existing skill because, in real work, it got something wrong or
+met a case it did not cover. Rob says so, or fixes the output by hand. This
+is how skills grow: the first version covers the main case, and each corner
+case is added here when it arises.
 
 The aim is a skill that stays short and right. Appending a rule for every
 correction makes a skill long and self-contradictory, so first work out what
